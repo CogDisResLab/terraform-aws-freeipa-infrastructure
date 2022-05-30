@@ -29,11 +29,6 @@ repos:
             - "--quiet"
             - "--compact"
         - id: terraform_docs
-          args:
-            - --hook-config=--path-to-file=README.md        # Valid UNIX path. I.e. ../TFDOC.md or docs/README.md etc.
-            - --hook-config=--add-to-existing-file=true     # Boolean. true or false
-            - --hook-config=--create-file-if-not-exist=true # Boolean. true or false
-            - "markdown"
         - id: terraform_tflint
           args:
             - "terraform"
