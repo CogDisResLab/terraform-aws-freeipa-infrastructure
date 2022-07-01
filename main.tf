@@ -33,6 +33,7 @@ module "idp_instance_recordset" {
 
   instance     = aws_instance.idp_host[count.index]
   private_zone = var.private_zone
+  public_zone  = var.public_zone
   reverse_zone = var.reverse_zone
   domain_name  = "idp${count.index}.cdrlprojects.org"
 }
