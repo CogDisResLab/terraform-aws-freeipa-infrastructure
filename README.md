@@ -45,7 +45,7 @@ it serves the purpose it should, I'm okay with it.
 | <a name="input_replicas"></a> [replicas](#input\_replicas) | The number of replicas to create for the IDP host | `number` | `2` | no |
 | <a name="input_reverse_zone"></a> [reverse\_zone](#input\_reverse\_zone) | The reverse DNS zone to use for the IDP host | `any` | n/a | yes |
 | <a name="input_subdomain"></a> [subdomain](#input\_subdomain) | The subdomain to use for the IDP host | `string` | `"idp"` | no |
-| <a name="input_subnets"></a> [subnets](#input\_subnets) | The subnets to use for the IDP host | `list(string)` | n/a | yes |
+| <a name="input_subnets"></a> [subnets](#input\_subnets) | The subnets to use for the IDP host | `list(string)` | `[]` | no |
 
 ## Outputs
 

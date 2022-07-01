@@ -48,6 +48,7 @@ variable "main_vpc" {
 variable "subnets" {
   description = "The subnets to use for the IDP host"
   type        = list(string)
+  default     = []
 }
 
 variable "key_name" {
