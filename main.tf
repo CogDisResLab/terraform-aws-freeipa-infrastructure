@@ -1,10 +1,6 @@
-locals {
-  replicas = length(var.subnets)
-}
-
 resource "aws_instance" "idp_host" {
   count                  = local.replicas
-  ami                    = var.instance_ami_id
+  ami                    = local.amis[var.region][var.instance_arch]
   instance_type          = var.instance_type
   subnet_id              = var.subnets[count.index]
   key_name               = var.key_name
